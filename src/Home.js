@@ -65,7 +65,7 @@ function Home({user:{user},signOut}) {
         
         </div></Col>
         
-            <Col><div className="greeting-message">
+            <Col className='mt-4'><div className="greeting-message">
         <h4>Selam {user.email}, {greetingOfTheDay()}</h4>
         </div>
         <Button className='mt-5' onClick={signOut} variant="danger" >Çıkış Yap</Button>
@@ -75,7 +75,7 @@ function Home({user:{user},signOut}) {
         <div>
       <Row>
         <Col> <TodoInput edit_todo={edit_todo} setEditTodo={setEditTodo}/></Col>
-        <Col><TodoTasks uid={user?.uid} editTodo={editTodo}/></Col>
+        <Col className='mt-5' sm={6}><TodoTasks uid={user?.uid} editTodo={editTodo}/></Col>
       </Row>
         </div>
     </Container>

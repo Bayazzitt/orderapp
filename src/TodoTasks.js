@@ -59,6 +59,7 @@ setEventTitle(title);
 
 
   return (
+    <div>
     <div style={{width:'50%',maxWidth:'300px'}}>
         {
             todos.length>0 ? (
@@ -83,6 +84,7 @@ setEventTitle(title);
             show_event_counter===true ? <EventModal event_date={event_counter_date} setShowEventCounter={setShowEventCounter} title={title} />:''
         }
       
+    </div>
     </div>
   )
 }
